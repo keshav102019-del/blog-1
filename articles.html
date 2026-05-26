@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Articles & Guides | Keshav Labs AI Productivity Hub</title>
+  <meta name="description" content="Explore our library of deep-dive tutorials, system audits, and verified automation guides designed for students, creators, and business networks.">
+  
+  <!-- Fonts Integration -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Core Design Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVIGATION HEADER -->
+  <header class="header">
+    <div class="scroll-progress-container">
+      <div class="scroll-progress-bar"></div>
+    </div>
+    <div class="container nav-container">
+      <a href="index.html" class="logo-link">
+        <span class="logo-dot"></span>
+        <span>Keshav Labs</span>
+      </a>
+      
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="articles.html" class="nav-link active">Articles</a></li>
+          <li><a href="workflows.html" class="nav-link">Workflows</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="contact.html" class="btn btn-secondary" style="padding: 0.5rem 1rem; font-size: 0.8125rem;">Work With Me</a>
+        <button class="mobile-nav-toggle" aria-label="Toggle Navigation">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="width: 24px; height: 24px; stroke-width: 2px;">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN ARTICLES AREA -->
+  <main style="padding: 4rem 0;">
+    <div class="container">
+      <div class="section-title-wrapper" style="text-align: left; margin-bottom: 4rem;">
+        <span class="section-tag">Library Directory</span>
+        <h1 class="section-title" style="font-size: 3rem; margin-bottom: 0.5rem;">Knowledge Base</h1>
+        <p class="section-subtitle" style="margin: 0; max-width: 650px;">A comprehensive, structured catalog of vetted automation workflows, study systems, SaaS audits, and tool comparisons.</p>
+      </div>
+
+      <!-- Live Filters and Real-Time Search -->
+      <div class="blog-controls" style="margin-bottom: 4.5rem;">
+        <div class="search-wrapper">
+          <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+          </svg>
+          <input type="text" class="search-input" placeholder="Search articles, guides, reviews...">
+        </div>
+
+        <div class="blog-filters">
+          <button class="filter-btn active" data-filter="all">All <span class="filter-count">0</span></button>
+          <button class="filter-btn" data-filter="workflows">Workflows <span class="filter-count">0</span></button>
+          <button class="filter-btn" data-filter="students">Students <span class="filter-count">0</span></button>
+          <button class="filter-btn" data-filter="creators">Creators <span class="filter-count">0</span></button>
+          <button class="filter-btn" data-filter="agencies">Agencies <span class="filter-count">0</span></button>
+          <button class="filter-btn" data-filter="reviews">Reviews <span class="filter-count">0</span></button>
+          <button class="filter-btn" data-filter="comparisons">Comparisons <span class="filter-count">0</span></button>
+        </div>
+      </div>
+
+      <!-- Spotlight Cornerstone Article -->
+      <div class="cornerstone-post" data-category="workflows" onclick="window.location.href='post-zero-maintenance-ai.html';">
+        <div class="cornerstone-image-wrapper">
+          <svg viewBox="0 0 500 350" style="background:#ffffff; width:100%; height:100%;">
+            <defs>
+              <pattern id="grid-art" width="25" height="25" patternUnits="userSpaceOnUse">
+                <path d="M 25 0 L 0 0 0 25" fill="none" stroke="#f1f5f9" stroke-width="1"/>
+              </pattern>
+            </defs>
+            <rect width="100%" height="100%" fill="url(#grid-art)" />
+            <circle cx="250" cy="175" r="80" fill="none" stroke="#e2e8f0" stroke-dasharray="5 5" stroke-width="1.5"/>
+            <rect x="180" y="140" width="140" height="70" rx="8" fill="#ffffff" stroke="#0f172a" stroke-width="1.5"/>
+            <text x="250" y="180" font-family="'Outfit', sans-serif" font-size="12" font-weight="700" fill="#0f172a" text-anchor="middle">AI ENGINE</text>
+            <line x1="80" y1="175" x2="180" y2="175" stroke="#94a3b8" stroke-dasharray="3 3" stroke-width="1.5"/>
+            <line x1="320" y1="175" x2="420" y2="175" stroke="#94a3b8" stroke-dasharray="3 3" stroke-width="1.5"/>
+            <rect x="40" y="150" width="50" height="50" rx="6" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.5"/>
+            <text x="65" y="180" font-size="14" text-anchor="middle">📥</text>
+            <rect x="410" y="150" width="50" height="50" rx="6" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.5"/>
+            <text x="435" y="180" font-size="14" text-anchor="middle">📤</text>
+          </svg>
+        </div>
+        <div class="cornerstone-content">
+          <div class="post-meta-line">
+            <span class="post-cat-badge">Workflows</span>
+            <span>12 min read</span>
+            <span>•</span>
+            <span>Last Updated: Today</span>
+          </div>
+          <h3 class="cornerstone-title">How to Build a Zero-Maintenance AI Content Machine</h3>
+          <p class="cornerstone-excerpt">Discover the step-by-step systems we use to write, format, optimize, and schedule 10+ SEO-pillar articles a week using Make.com, ChatGPT, and Notion without sacrificing editorial quality.</p>
+          <div class="author-block">
+            <svg class="author-avatar" viewBox="0 0 100 100">
+              <circle cx="50" cy="50" r="50" fill="#f1f5f9"/>
+              <text x="50" y="58" font-family="'Outfit', sans-serif" font-size="28" font-weight="700" fill="#0f172a" text-anchor="middle">KL</text>
+            </svg>
+            <div class="author-info">
+              <span class="author-name">Keshav / Systems Architect</span>
+              <span class="post-date">May 26, 2026</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Articles Grid -->
+      <div class="blog-grid">
+        <!-- Post 1 (Students) -->
+        <div class="blog-card" data-category="students" onclick="window.location.href='post-stem-study-framework.html';">
+          <div class="blog-image-wrapper">
+            <svg viewBox="0 0 350 200" style="background:#ffffff; width:100%; height:100%;">
+              <rect width="100%" height="100%" fill="#fafafa"/>
+              <rect x="50" y="40" width="250" height="120" rx="8" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+              <line x1="70" y1="70" x2="190" y2="70" stroke="#0f172a" stroke-width="2"/>
+              <line x1="70" y1="95" x2="280" y2="95" stroke="#cbd5e1" stroke-width="1.5"/>
+              <line x1="70" y1="115" x2="250" y2="115" stroke="#cbd5e1" stroke-width="1.5"/>
+              <line x1="70" y1="135" x2="270" y2="135" stroke="#cbd5e1" stroke-width="1.5"/>
+            </svg>
+          </div>
+          <div class="blog-content">
+            <div class="post-meta-line">
+              <span class="post-cat-badge">Students</span>
+              <span>6 min read</span>
+            </div>
+            <h4 class="blog-title">My Automated AI Study Framework for Heavy STEM Majors</h4>
+            <p class="blog-excerpt">A complete walkthrough of converting textbook chapters into customized spaced-repetition flashcards and semantic study guides using PDF Parsers and LLMs.</p>
+            <span class="blog-btn">
+              Read Guide
+              <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7" />
+              </svg>
+            </span>
+          </div>
+        </div>
+
+        <!-- Post 2 (Creators) -->
+        <div class="blog-card" data-category="creators">
+          <div class="blog-image-wrapper">
+            <svg viewBox="0 0 350 200" style="background:#ffffff; width:100%; height:100%;">
+              <rect width="100%" height="100%" fill="#fafafa"/>
+              <circle cx="100" cy="100" r="40" fill="#f1f5f9" stroke="#e2e8f0" stroke-width="1"/>
+              <circle cx="250" cy="100" r="40" fill="#f1f5f9" stroke="#e2e8f0" stroke-width="1"/>
+              <line x1="140" y1="100" x2="210" y2="100" stroke="#0f172a" stroke-dasharray="3 3" stroke-width="1.5"/>
+              <text x="100" y="105" font-size="14" text-anchor="middle">🎥</text>
+              <text x="250" y="105" font-size="14" text-anchor="middle">✍️</text>
+            </svg>
+          </div>
+          <div class="blog-content">
+            <div class="post-meta-line">
+              <span class="post-cat-badge">Creators</span>
+              <span>8 min read</span>
+            </div>
+            <h4 class="blog-title">How AI Scripts Saved My Creative Agency Over 30 Hours Weekly</h4>
+            <p class="blog-excerpt">From transcript scraping to social hooks. Learn the exact prompt templates and workflows that turn standard YouTube concepts into micro-content campaigns.</p>
+            <span class="blog-btn">
+              Read Guide
+              <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7" />
+              </svg>
+            </span>
+          </div>
+        </div>
+
+        <!-- Post 3 (Agencies) -->
+        <div class="blog-card" data-category="agencies">
+          <div class="blog-image-wrapper">
+            <svg viewBox="0 0 350 200" style="background:#ffffff; width:100%; height:100%;">
+              <rect width="100%" height="100%" fill="#fafafa"/>
+              <rect x="80" y="60" width="190" height="80" rx="6" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+              <path d="M100 80h150M100 100h100M100 120h70" stroke="#0f172a" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="blog-content">
+            <div class="post-meta-line">
+              <span class="post-cat-badge">Agencies</span>
+              <span>9 min read</span>
+            </div>
+            <h4 class="blog-title">Automating High-Ticket Lead Extraction and Cold Outreach</h4>
+            <p class="blog-excerpt">An in-depth guide on linking Apollo database exports with Clay, GPT enrichment, and personalized email templates inside Instantly.ai.</p>
+            <span class="blog-btn">
+              Read Guide
+              <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7" />
+              </svg>
+            </span>
+          </div>
+        </div>
+
+        <!-- In-Feed Premium Lead Magnet Banner -->
+        <div class="infeed-cta">
+          <div class="infeed-info">
+            <span class="infeed-tag">Free Template</span>
+            <h4 class="infeed-title">Get Our Spaced Repetition Notion Workspace</h4>
+            <p class="infeed-desc">Download the custom high-converting study OS template. Over 4,000+ STEM students use this setup daily to automate active recall cycles.</p>
+          </div>
+          <a href="index.html#newsletter" class="btn infeed-btn">Download Workspace</a>
+        </div>
+
+        <!-- Post 4 (Reviews) -->
+        <div class="blog-card" data-category="reviews">
+          <div class="blog-image-wrapper">
+            <svg viewBox="0 0 350 200" style="background:#ffffff; width:100%; height:100%;">
+              <rect width="100%" height="100%" fill="#fafafa"/>
+              <rect x="40" y="60" width="110" height="80" rx="6" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+              <rect x="200" y="60" width="110" height="80" rx="6" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+              <text x="95" y="105" font-family="'Outfit', sans-serif" font-size="10" font-weight="700" text-anchor="middle">MAKE.COM</text>
+              <text x="255" y="105" font-family="'Outfit', sans-serif" font-size="10" font-weight="700" text-anchor="middle">ZAPIER</text>
+            </svg>
+          </div>
+          <div class="blog-content">
+            <div class="post-meta-line">
+              <span class="post-cat-badge">Reviews</span>
+              <span>11 min read</span>
+            </div>
+            <h4 class="blog-title">Make.com vs. Zapier: The Ultimate Workflow Engine Verdict</h4>
+            <p class="blog-excerpt">An expert review of data-routing capabilities, nested conditional logic, API error recovery, and operating costs for high-volume SaaS automation.</p>
+            <span class="blog-btn">
+              Read Review
+              <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7" />
+              </svg>
+            </span>
+          </div>
+        </div>
+
+        <!-- Post 5 (Comparisons) -->
+        <div class="blog-card" data-category="comparisons">
+          <div class="blog-image-wrapper">
+            <svg viewBox="0 0 350 200" style="background:#ffffff; width:100%; height:100%;">
+              <rect width="100%" height="100%" fill="#fafafa"/>
+              <circle cx="175" cy="100" r="50" fill="none" stroke="#e2e8f0" stroke-width="1.5"/>
+              <circle cx="175" cy="100" r="30" fill="none" stroke="#e2e8f0" stroke-dasharray="3 3" stroke-width="1.5"/>
+              <rect x="150" y="85" width="50" height="30" rx="4" fill="#ffffff" stroke="#0f172a" stroke-width="1"/>
+              <text x="175" y="104" font-family="'Outfit', sans-serif" font-size="10" font-weight="600" text-anchor="middle">FATHOM</text>
+            </svg>
+          </div>
+          <div class="blog-content">
+            <div class="post-meta-line">
+              <span class="post-cat-badge">Comparisons</span>
+              <span>7 min read</span>
+            </div>
+            <h4 class="blog-title">We Tested 5 AI Meeting Recappers. Here is the Winner</h4>
+            <p class="blog-excerpt">An un-biased review evaluating transcription accuracy, action-item categorization, Notion sync, and price points of Fathom, Otter, and Read.ai.</p>
+            <span class="blog-btn">
+              Read Comparison
+              <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7" />
+              </svg>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- NEWSLETTER FOOTER SECTION -->
+  <section class="newsletter-section" style="border-top:1px solid var(--border-light)">
+    <div class="container">
+      <div class="newsletter-box">
+        <h2 class="newsletter-title">Join The Workflow Weekly Digest</h2>
+        <p class="newsletter-subtitle">Get the code blueprints, Make.com triggers, and study frameworks delivered straight to your inbox.</p>
+        <form id="keshav-newsletter-form" class="newsletter-form">
+          <div class="newsletter-input-wrapper">
+            <svg class="newsletter-email-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207" />
+            </svg>
+            <input type="email" class="newsletter-input" placeholder="Your best business email..." required>
+          </div>
+          <button type="submit" class="btn newsletter-btn">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- UNIFIED FOOTER -->
+  <footer class="footer">
+    <div class="container footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="logo-link">
+          <span class="logo-dot"></span>
+          <span>Keshav Labs</span>
+        </a>
+        <p class="footer-brand-desc">Building structured, modern AI productivity pipelines, authentic SaaS product audits, and high-ranking SEO content assets.</p>
+      </div>
+      
+      <div class="footer-nav">
+        <div class="footer-column">
+          <span class="footer-col-title">Frameworks</span>
+          <ul class="footer-links">
+            <li><a href="articles.html" class="footer-link">AI Automation</a></li>
+            <li><a href="articles.html" class="footer-link">Study Systems</a></li>
+            <li><a href="articles.html" class="footer-link">Creative Repurposing</a></li>
+            <li><a href="articles.html" class="footer-link">Outreach Loops</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <span class="footer-col-title">Navigation</span>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="articles.html" class="footer-link">Articles</a></li>
+            <li><a href="workflows.html" class="footer-link">Workflows</a></li>
+            <li><a href="services.html" class="footer-link">Services</a></li>
+            <li><a href="about.html" class="footer-link">About Founder</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-subscribe">
+        <span class="footer-col-title">Weekly Digest</span>
+        <form id="keshav-footer-newsletter" class="footer-sub-form">
+          <input type="email" class="footer-sub-input" placeholder="Your email..." required>
+          <button type="submit" class="footer-sub-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="width: 14px; height: 14px; stroke-width: 2.5px;">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span class="footer-copyright">© 2026 Keshav Labs. All rights reserved. Designed with premium, minimalist systems in mind.</span>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="app.js"></script>
+</body>
+</html>

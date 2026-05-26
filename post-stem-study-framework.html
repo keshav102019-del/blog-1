@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>My Automated AI Study Framework for Heavy STEM Majors | Keshav Labs</title>
+  <meta name="description" content="A complete walkthrough of converting textbook chapters into customized spaced-repetition flashcards and semantic study guides using PDF Parsers and LLMs.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Custom Overrides for Articles Details to Ensure Typographic Perfection -->
+  <style>
+    .article-body {
+      font-size: 1.0625rem;
+      line-height: 1.75;
+      color: #334155;
+    }
+    .article-body h2 {
+      font-size: 1.75rem;
+      margin-top: 3rem;
+      margin-bottom: 1rem;
+      color: var(--text-primary);
+    }
+    .article-body h3 {
+      font-size: 1.35rem;
+      margin-top: 2.25rem;
+      margin-bottom: 0.75rem;
+      color: var(--text-primary);
+    }
+    .article-body p {
+      margin-bottom: 1.5rem;
+    }
+    .article-body ul, .article-body ol {
+      margin-bottom: 1.5rem;
+      padding-left: 1.5rem;
+    }
+    .article-body li {
+      margin-bottom: 0.5rem;
+    }
+    .article-callout {
+      background: var(--bg-accent);
+      border-left: 3px solid var(--text-primary);
+      padding: 1.5rem;
+      border-radius: 0 8px 8px 0;
+      margin: 2.5rem 0;
+      font-size: 0.9375rem;
+    }
+    .article-diagram {
+      margin: 3rem 0;
+      border: 1px solid var(--border-medium);
+      border-radius: 12px;
+      padding: 1rem;
+      background: #ffffff;
+      box-shadow: var(--shadow-sm);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="scroll-progress-container">
+      <div class="scroll-progress-bar"></div>
+    </div>
+    <div class="container nav-container">
+      <a href="index.html" class="logo-link">
+        <span class="logo-dot"></span>
+        <span>Keshav Labs</span>
+      </a>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="articles.html" class="nav-link active">Articles</a></li>
+          <li><a href="workflows.html" class="nav-link">Workflows</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <a href="contact.html" class="btn btn-secondary" style="padding: 0.5rem 1rem; font-size: 0.8125rem;">Work With Me</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN ARTICLE CONTAINER -->
+  <main style="padding: 5rem 0;">
+    <article class="container-readable">
+      
+      <!-- Article Header -->
+      <header style="margin-bottom: 3.5rem;">
+        <div class="post-meta-line" style="margin-bottom: 1rem;">
+          <span class="post-cat-badge">Students</span>
+          <span>6 min read</span>
+          <span>•</span>
+          <span>Last Updated: May 26, 2026</span>
+        </div>
+        <h1 style="font-family: var(--font-heading); font-size: 3rem; font-weight: 800; color: var(--text-primary); line-height: 1.15; letter-spacing: -0.04em; margin-bottom: 1.5rem;">
+          My Automated AI Study Framework for Heavy STEM Majors
+        </h1>
+        <p style="font-size: 1.25rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 2rem;">
+          Convert thick academic chapters, lectures, and research whitepapers into active spaced-repetition flashcard sets using python hooks and local LLMs.
+        </p>
+
+        <!-- E-E-A-T Author Card -->
+        <div class="author-block" style="border-bottom: 1px solid var(--border-medium); padding-bottom: 2rem;">
+          <svg class="author-avatar" viewBox="0 0 100 100" style="width:40px; height:40px;">
+            <circle cx="50" cy="50" r="50" fill="#f1f5f9"/>
+            <text x="50" y="58" font-family="'Outfit', sans-serif" font-size="28" font-weight="700" fill="#0f172a" text-anchor="middle">KL</text>
+          </svg>
+          <div class="author-info">
+            <span class="author-name" style="font-size:0.875rem;">Written by Keshav</span>
+            <span class="post-date">Systems Architect • Active Recall Verifier</span>
+          </div>
+        </div>
+      </header>
+
+      <!-- Article Body -->
+      <div class="article-body">
+        
+        <!-- TL;DR Summary Block -->
+        <div class="article-callout" style="margin-top: 0; background: #fafafa; border-color: var(--text-primary);">
+          <strong>TL;DR (Quick Student Summary):</strong>
+          <p style="margin: 0.5rem 0 0 0; font-size: 0.875rem;">Ingest lecture PDFs into a central watchfolder. Parse text layers automatically using PDF-parsing engines. Feed clean segments to Claude 3.5 Sonnet to map core formulas, theorems, and definitions into structured Anki-compatible flashcard decks.</p>
+        </div>
+
+        <p>STEM curricula are heavily loaded with information density. Passive reading of textbooks or reviewing lecture slides yields extremely low long-term memory retention rates. The most verified method to retain scientific parameters is a combination of <strong>Active Recall</strong> and <strong>Spaced Repetition</strong>.</p>
+        
+        <p>However, the biggest friction point in this methodology is the manual construction of high-quality flashcards. Creating detailed cards can eat up hours of study time weekly. This guide shows you how to automate flashcard creation completely.</p>
+
+        <h2>1. Watchfolder & PDF Ingest</h2>
+        <p>We configure a specific folder in our local system (or cloud services like Google Drive) called <code>/study-watchfolder</code>. Dropping textbook chapters or lecture PDFs here triggers the automated script.</p>
+        <p>Our backend parses the PDF structure, strips header margins and footnote bibliography pages, and outputs clean raw text blocks segmented by chapters.</p>
+
+        <h2>2. Claude 3.5 Spaced Repetition Prompts</h2>
+        <p>A standard LLM prompt like <em>"Write flashcards for this textbook"</em> results in low-quality cards containing long sentences that violate spaced-repetition atomic rules. We pass raw text blocks into Claude 3.5 Sonnet utilizing strict instructions:</p>
+        
+        <div class="article-callout">
+          <strong>Atomic Flashcard Rule:</strong> Keep each flashcard highly focused on a single formula, definition, or theorem. The question should target one variable, and the answer must be under 10 words.
+        </div>
+
+        <h3>The Precise Prompt Template:</h3>
+        <pre style="background: var(--bg-accent); border: 1px solid var(--border-medium); padding: 1.5rem; border-radius: 8px; font-size: 0.8125rem; overflow-x: auto; margin-bottom: 2rem;"><code>Convert this STEM text segment into atomic active-recall flashcards.
+Requirements:
+1. Target only core formulas, definitions, and equations.
+2. Structure the card in a strictly Q&A format.
+3. Keep answers under 8 words.
+Format:
+Q: [Question]
+A: [Atomic Answer]</code></pre>
+
+        <h2>3. Local Anki Database Sync</h2>
+        <p>Once Claude outputs structured Q&A Markdown blocks, Make.com parses them and converts the records into a standard CSV array. The CSV integrates into the local Anki card database using the <strong>AnkiConnect API</strong> add-on, automatically categorizing card decks under correct topic headings.</p>
+        
+        <p>This automated flow takes a 40-page textbook chapter and outputs over 50 perfect active recall flashcards in under 90 seconds, saving massive pre-exam cramming time.</p>
+      </div>
+
+    </article>
+  </main>
+
+  <!-- NEWSLETTER BLOCK -->
+  <section class="newsletter-section" style="border-top: 1px solid var(--border-light)">
+    <div class="container">
+      <div class="newsletter-box">
+        <h2 class="newsletter-title">Subscribe to the Workflow Digest</h2>
+        <p class="newsletter-subtitle">Get more verified blueprints and study systems sent directly to your inbox weekly.</p>
+        <form id="keshav-newsletter-form" class="newsletter-form">
+          <div class="newsletter-input-wrapper">
+            <svg class="newsletter-email-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207" />
+            </svg>
+            <input type="email" class="newsletter-input" placeholder="Your best email..." required>
+          </div>
+          <button type="submit" class="btn newsletter-btn">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="logo-link">
+          <span class="logo-dot"></span>
+          <span>Keshav Labs</span>
+        </a>
+        <p class="footer-brand-desc">Building structured, modern AI productivity pipelines, authentic SaaS product audits, and high-ranking SEO content assets.</p>
+      </div>
+      <div class="footer-nav">
+        <div class="footer-column">
+          <span class="footer-col-title">Frameworks</span>
+          <ul class="footer-links">
+            <li><a href="articles.html" class="footer-link">AI Automation</a></li>
+            <li><a href="articles.html" class="footer-link">Study Systems</a></li>
+            <li><a href="articles.html" class="footer-link">Creative Repurposing</a></li>
+            <li><a href="articles.html" class="footer-link">Outreach Loops</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <span class="footer-col-title">Navigation</span>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="articles.html" class="footer-link">Articles</a></li>
+            <li><a href="workflows.html" class="footer-link">Workflows</a></li>
+            <li><a href="services.html" class="footer-link">Services</a></li>
+            <li><a href="about.html" class="footer-link">About Founder</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-subscribe">
+        <span class="footer-col-title">Weekly Digest</span>
+        <form id="keshav-footer-newsletter" class="footer-sub-form">
+          <input type="email" class="footer-sub-input" placeholder="Your email..." required>
+          <button type="submit" class="footer-sub-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="width: 14px; height: 14px; stroke-width: 2.5px;">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span class="footer-copyright">© 2026 Keshav Labs. All rights reserved. Designed with premium, minimalist systems in mind.</span>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
