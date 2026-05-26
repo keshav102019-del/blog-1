@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Claude Code vs. Antigravity 2.0: The Terminal Agent Showdown | Keshav Labs</title>
+  <meta name="description" content="An expert developer comparison evaluating terminal autonomy, codebase search indexing, sandbox command safety, and real-world scripting speeds.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+  
+  <style>
+    .article-body {
+      font-size: 1.0625rem;
+      line-height: 1.75;
+      color: #334155;
+    }
+    .article-body h2 {
+      font-size: 1.75rem;
+      margin-top: 3rem;
+      margin-bottom: 1rem;
+      color: var(--text-primary);
+    }
+    .article-body h3 {
+      font-size: 1.35rem;
+      margin-top: 2.25rem;
+      margin-bottom: 0.75rem;
+      color: var(--text-primary);
+    }
+    .article-body p {
+      margin-bottom: 1.5rem;
+    }
+    .article-body ul, .article-body ol {
+      margin-bottom: 1.5rem;
+      padding-left: 1.5rem;
+    }
+    .article-body li {
+      margin-bottom: 0.5rem;
+    }
+    .article-callout {
+      background: var(--bg-accent);
+      border-left: 3px solid var(--text-primary);
+      padding: 1.5rem;
+      border-radius: 0 8px 8px 0;
+      margin: 2.5rem 0;
+      font-size: 0.9375rem;
+    }
+    .article-diagram {
+      margin: 3rem 0;
+      border: 1px solid var(--border-medium);
+      border-radius: 12px;
+      padding: 1.5rem;
+      background: #ffffff;
+      box-shadow: var(--shadow-sm);
+    }
+    /* Comparison Table Styling */
+    .comp-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 2.5rem 0;
+      font-size: 0.875rem;
+      text-align: left;
+    }
+    .comp-table th {
+      background: var(--bg-accent);
+      color: var(--text-primary);
+      font-weight: 700;
+      padding: 0.75rem 1rem;
+      border-bottom: 2px solid var(--border-medium);
+    }
+    .comp-table td {
+      padding: 0.75rem 1rem;
+      border-bottom: 1px solid var(--border-light);
+      color: var(--text-secondary);
+    }
+    .comp-table tr:hover {
+      background: #fdfdfd;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="scroll-progress-container">
+      <div class="scroll-progress-bar"></div>
+    </div>
+    <div class="container nav-container">
+      <a href="index.html" class="logo-link">
+        <span class="logo-dot"></span>
+        <span>Keshav Labs</span>
+      </a>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="articles.html" class="nav-link active">Articles</a></li>
+          <li><a href="workflows.html" class="nav-link">Workflows</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <a href="contact.html" class="btn btn-secondary" style="padding: 0.5rem 1rem; font-size: 0.8125rem;">Work With Me</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN ARTICLE READ CONTAINER -->
+  <main style="padding: 5rem 0;">
+    <article class="container-readable">
+      
+      <!-- Article Header -->
+      <header style="margin-bottom: 3.5rem;">
+        <div class="post-meta-line" style="margin-bottom: 1rem;">
+          <span class="post-cat-badge">Comparisons</span>
+          <span>9 min read</span>
+          <span>•</span>
+          <span>Last Updated: May 27, 2026</span>
+        </div>
+        <h1 style="font-family: var(--font-heading); font-size: 3rem; font-weight: 800; color: var(--text-primary); line-height: 1.15; letter-spacing: -0.04em; margin-bottom: 1.5rem;">
+          Claude Code vs. Antigravity 2.0: The Terminal Agent Showdown
+        </h1>
+        <p style="font-size: 1.25rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 2rem;">
+          Forget basic code completion sidebar charts. The industry has shifted to terminal-native agentic engines that run commands, edit files, and build apps. We put Anthropic's new CLI and Google's advanced agent to the test.
+        </p>
+
+        <!-- Author Credentials -->
+        <div class="author-block" style="border-bottom: 1px solid var(--border-medium); padding-bottom: 2rem;">
+          <svg class="author-avatar" viewBox="0 0 100 100" style="width:40px; height:40px;">
+            <circle cx="50" cy="50" r="50" fill="#f1f5f9"/>
+            <text x="50" y="58" font-family="'Outfit', sans-serif" font-size="28" font-weight="700" fill="#0f172a" text-anchor="middle">KL</text>
+          </svg>
+          <div class="author-info">
+            <span class="author-name" style="font-size:0.875rem;">Written by Keshav</span>
+            <span class="post-date">Systems Architect • Sandbox & CLI Auditor</span>
+          </div>
+        </div>
+      </header>
+
+      <!-- Article Body -->
+      <div class="article-body">
+        
+        <!-- TL;DR Summary Block -->
+        <div class="article-callout" style="margin-top: 0; background: #fafafa; border-color: var(--text-primary);">
+          <strong>TL;DR (The Verdict):</strong>
+          <p style="margin: 0.5rem 0 0 0; font-size: 0.875rem;"><strong>Claude Code</strong> is an exceptional, blisteringly fast command-line tool for rapid local edits, codebase search, and instant Git commits. **Antigravity 2.0** is an enterprise-grade architect agent that excels at safe structural planning, multi-agent orchestration, sandbox security boundaries, and high-fidelity aesthetic visual generation.</p>
+        </div>
+
+        <p>For the past few years, the developer AI experience was limited to the IDE side panel. You had to copy-paste snippets, manually resolve imports, and run tests yourself. That era is officially dead.</p>
+        
+        <p>The new wave is **terminal-native agentic coding**. Tools now sit directly inside your shell, read your local directories, write structural changes, test their output, and push to GitHub. The two front-runners in this space are Anthropic's <strong>Claude Code</strong> and Google's <strong>Antigravity 2.0</strong>. Here is our hands-on review of how they match up in real development environments.</p>
+
+        <h2>1. The Philosophical Divergence</h2>
+        <p>While both systems live inside the terminal, they approach software engineering tasks from completely opposite architectural standpoints:</p>
+        <ul>
+          <li><strong>Claude Code (The CLI Fast-Responder):</strong> A highly responsive command-line utility. It acts like an interactive shell wrapper. You prompt it, and it immediately edits files using precise unified diff blocks. It is fast, reactive, and highly optimized for localized refactoring.</li>
+          <li><strong>Antigravity 2.0 (The Architect Planner):</strong> An agentic orchestration system. Instead of writing code immediately on the first prompt, Antigravity defaults to an advanced **Planning Mode**. It performs multi-step codebase research, drafts a detailed *Implementation Plan*, requests explicit user sign-off, tracks sub-tasks inside a dynamic checklist, and executes the changes safely using structured tool parameters.</li>
+        </ul>
+
+        <h2>2. Feature Comparison Matrix</h2>
+        <p>To understand where each agent shines, let's break down their core capabilities across critical system development criteria:</p>
+
+        <table class="comp-table">
+          <thead>
+            <tr>
+              <th>Evaluation Metric</th>
+              <th>Claude Code</th>
+              <th>Antigravity 2.0</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Execution Philosophy</strong></td>
+              <td>Reactive, interactive CLI shell loops</td>
+              <td>Plan-first, structured multi-agent loops</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td><strong>Planning Architecture</strong></td>
+              <td>No pre-coding documents; edits directly</td>
+              <td>Detailed Implementation Plans & Task Checklists</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td><strong>Security & Sandboxing</strong></td>
+              <td>Runs raw commands directly on host system</td>
+              <td>Isolated container sandbox; explicit network approvals</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td><strong>Visual UI Prototyping</strong></td>
+              <td>Text-based file output only</td>
+              <td>Built-in high-fidelity CSS and SVG asset generator</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td><strong>Git Integration</strong></td>
+              <td>Auto-generates clean local commits</td>
+              <td>Performs full remote pushes & configures authors</td>
+              <td>-</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2>3. Deep-Dive: Safety, Security, and Sandboxing</h2>
+        <p>This is where the distinction becomes critical for professional engineers. Letting an AI model run arbitrary terminal commands on your local machine is inherently risky.</p>
+        
+        <div class="article-callout">
+          <strong>Security Vulnerability:</strong> Standard CLI tools like Claude Code prompt you before executing commands, but they execute directly on your raw host machine. A bad loop or corrupted package dependency can modify global configurations or access sensitive environment variables.
+        </div>
+
+        <p><strong>Antigravity 2.0</strong> addresses this security gap with a built-in **Local Sandbox container boundary**. By default:</p>
+        <ol>
+          <li>All file creation, modification, and test commands are run inside an isolated workspace.</li>
+          <li>Outbound network connections are strictly blocked to prevent data exfiltration.</li>
+          <li>If a command requires network access (e.g. running <code>npm install</code>, or a <code>git push</code>), Antigravity pauses and prompts the user to grant explicit **Bypass Sandbox** clearance. This visual gate gives developers absolute security over their host systems.</li>
+        </ol>
+
+        <h2>4. High-Fidelity UI Prototyping</h2>
+        <p>Most AI agents struggle to build layouts that actually look premium. They rely on basic Tailwind frameworks, default grey buttons, and placeholder illustrations.</p>
+        <p>Antigravity is designed with a premium aesthetic engine. It avoids simple MVPs, strictly adhering to custom CSS variables, harmonies, typography scales, radial gradients, hairline slate dividers, and bespoke vector SVG illustrations drawn from scratch. Claude Code, on the other hand, is completely visual-agnostic, remaining strictly focused on command-line scripts and backend logic.</p>
+
+        <h2>5. The Verdict: Which Tool Wins?</h2>
+        <p>The choice between Claude Code and Antigravity 2.0 depends entirely on the scope of the project you are tackling:</p>
+
+        <h3>Choose Claude Code if:</h3>
+        <p>You are working inside an existing, well-structured codebase and need to perform rapid, surgical operations: quickly fixing a localized syntax error, running a quick test suite, finding where a specific function is imported, or writing clean git commit messages on the fly.</p>
+
+        <h3>Choose Antigravity 2.0 if:</h3>
+        <p>You are building a high-fidelity system from scratch, performing major structural refactors across multiple folders, or require extreme safety boundaries. Its planning mode eliminates the chaotic "trial-and-error" editing loops that plague simpler models, saving massive coordination time on complex business integrations.</p>
+      </div>
+
+      <!-- Native CTA banner -->
+      <div style="background:var(--bg-secondary); border:1px solid var(--border-medium); padding:3rem; border-radius:12px; margin-top:5rem; text-align:center;">
+        <h4 style="font-family:var(--font-heading); font-size:1.5rem; font-weight:700; color:var(--text-primary); margin-bottom:0.5rem;">Need premium visual systems and automations?</h4>
+        <p style="color:var(--text-secondary); max-width:480px; margin:0 auto 1.5rem auto; font-size:0.9375rem;">We design and deploy lightweight static blogs, high-converting copy, and zero-maintenance automation structures.</p>
+        <a href="contact.html?service=consulting" class="btn btn-primary">Book a System Audit</a>
+      </div>
+
+    </article>
+  </main>
+
+  <!-- NEWSLETTER -->
+  <section class="newsletter-section" style="border-top: 1px solid var(--border-light)">
+    <div class="container">
+      <div class="newsletter-box">
+        <h2 class="newsletter-title">Subscribe to the Workflow Digest</h2>
+        <p class="newsletter-subtitle">Get verified blueprints, comparison audits, and system workflows sent to your inbox weekly.</p>
+        <form id="keshav-newsletter-form" class="newsletter-form">
+          <div class="newsletter-input-wrapper">
+            <svg class="newsletter-email-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207" />
+            </svg>
+            <input type="email" class="newsletter-input" placeholder="Your business email..." required>
+          </div>
+          <button type="submit" class="btn newsletter-btn">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="logo-link">
+          <span class="logo-dot"></span>
+          <span>Keshav Labs</span>
+        </a>
+        <p class="footer-brand-desc">Building structured, modern AI productivity pipelines, authentic SaaS product audits, and high-ranking SEO content assets.</p>
+      </div>
+      <div class="footer-nav">
+        <div class="footer-column">
+          <span class="footer-col-title">Frameworks</span>
+          <ul class="footer-links">
+            <li><a href="articles.html" class="footer-link">AI Automation</a></li>
+            <li><a href="articles.html" class="footer-link">Study Systems</a></li>
+            <li><a href="articles.html" class="footer-link">Creative Repurposing</a></li>
+            <li><a href="articles.html" class="footer-link">Outreach Loops</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <span class="footer-col-title">Navigation</span>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="articles.html" class="footer-link">Articles</a></li>
+            <li><a href="workflows.html" class="footer-link">Workflows</a></li>
+            <li><a href="services.html" class="footer-link">Services</a></li>
+            <li><a href="about.html" class="footer-link">About Founder</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-subscribe">
+        <span class="footer-col-title">Weekly Digest</span>
+        <form id="keshav-footer-newsletter" class="footer-sub-form">
+          <input type="email" class="footer-sub-input" placeholder="Your email..." required>
+          <button type="submit" class="footer-sub-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="width: 14px; height: 14px; stroke-width: 2.5px;">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span class="footer-copyright">© 2026 Keshav Labs. All rights reserved. Designed with premium, minimalist systems in mind.</span>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
